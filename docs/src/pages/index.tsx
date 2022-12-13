@@ -303,30 +303,30 @@ export default function Home(): JSX.Element {
             <div className="github-section">
               <span className="github-button">
                 <GitHubButton
-                  href="https://github.com/apache/bridge"
+                  href="https://github.com/kiranbmore0101/bridge"
                   data-size="large"
                   data-show-count="true"
-                  aria-label="Star apache/bridge on GitHub"
+                  aria-label="Star kiranbmore0101/bridge on GitHub"
                 >
                   Star
                 </GitHubButton>
               </span>
               <span className="github-button">
                 <GitHubButton
-                  href="https://github.com/apache/bridge/subscription"
+                  href="https://github.com/kiranbmore0101/bridge/subscription"
                   data-size="large"
                   data-show-count="true"
-                  aria-label="Watch apache/bridge on GitHub"
+                  aria-label="Watch kiranbmore0101/bridge on GitHub"
                 >
                   Watch
                 </GitHubButton>
               </span>
               <span className="github-button">
                 <GitHubButton
-                  href="https://github.com/apache/bridge/fork"
+                  href="https://github.com/kiranbmore0101/bridge/fork"
                   data-size="large"
                   data-show-count="true"
-                  aria-label="Fork apache/bridge on GitHub"
+                  aria-label="Fork kiranbmore0101/bridge on GitHub"
                 >
                   Fork
                 </GitHubButton>

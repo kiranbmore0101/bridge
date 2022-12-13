@@ -68,7 +68,7 @@ describe('MetricOption', () => {
     expect(wrapper.find('InfoTooltipWithTrigger')).toHaveLength(0);
   });
   it('sets target="_blank" when openInNewWindow is true', () => {
-    props.url = 'https://github.com/apache/incubator-bridge';
+    props.url = 'https://github.com/kiranbmore0101/incubator-bridge';
     wrapper = shallow(factory(props));
     expect(wrapper.find('a').prop('target')).toBe('');
 

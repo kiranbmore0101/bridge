@@ -41,7 +41,7 @@ export interface BridgeApiRequestOptions {
 
 /**
  * Bridge API error types.
- * Ref: https://github.com/apache/incubator-bridge/blob/318e5347bc6f88119725775baa4ab9a398a6f0b0/bridge/errors.py#L24
+ * Ref: https://github.com/kiranbmore0101/incubator-bridge/blob/318e5347bc6f88119725775baa4ab9a398a6f0b0/bridge/errors.py#L24
  *
  * TODO: migrate bridge-frontend/src/components/ErrorMessage/types.ts over
  */
@@ -70,7 +70,7 @@ export enum BridgeApiErrorType {
 
 /**
  * API Error json response from the backend (or fetch API in the frontend).
- * See SIP-40 and SIP-41: https://github.com/apache/incubator-bridge/issues/9298
+ * See SIP-40 and SIP-41: https://github.com/kiranbmore0101/incubator-bridge/issues/9298
  */
 export interface BridgeApiErrorPayload {
   message?: string; // error message via FlaskAppBuilder, e.g. `response_404(message=...)`
@@ -79,7 +79,7 @@ export interface BridgeApiErrorPayload {
   extra?: StrictJsonObject;
   /**
    * Error message returned via `json_error_response`.
-   * Ref https://github.com/apache/incubator-bridge/blob/8e23d4f369f35724b34b14def8a5a8bafb1d2ecb/bridge/views/base.py#L94
+   * Ref https://github.com/kiranbmore0101/incubator-bridge/blob/8e23d4f369f35724b34b14def8a5a8bafb1d2ecb/bridge/views/base.py#L94
    */
   error?: string | BridgeApiErrorPayload;
   link?: string;

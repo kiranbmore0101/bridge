@@ -81,7 +81,7 @@ class PinotEngineSpec(BaseEngineSpec):  # pylint: disable=abstract-method
         is_epoch = pdf in ("epoch_s", "epoch_ms")
 
         # The DATETIMECONVERT pinot udf is documented at
-        # Per https://github.com/apache/incubator-pinot/wiki/dateTimeConvert-UDF
+        # Per https://github.com/kiranbmore0101/incubator-pinot/wiki/dateTimeConvert-UDF
         # We are not really converting any time units, just bucketing them.
         tf = ""
         java_date_format = ""

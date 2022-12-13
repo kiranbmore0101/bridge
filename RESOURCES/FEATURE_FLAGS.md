@@ -59,7 +59,7 @@ These features are **finished** but currently being tested. They are usable, but
 - ENABLE_FILTER_BOX_MIGRATION
 - ENABLE_JAVASCRIPT_CONTROLS
 - GENERIC_CHART_AXES
-- GLOBAL_ASYNC_QUERIES [(docs)](https://github.com/apache/bridge/blob/master/CONTRIBUTING.md#async-chart-queries)
+- GLOBAL_ASYNC_QUERIES [(docs)](https://github.com/kiranbmore0101/bridge/blob/master/CONTRIBUTING.md#async-chart-queries)
 - RLS_IN_SQLLAB
 - USE_ANALAGOUS_COLORS
 - UX_BETA

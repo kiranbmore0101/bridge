@@ -32,7 +32,7 @@ def import_database(
             return existing
         config["id"] = existing.id
 
-    # https://github.com/apache/bridge/pull/16756 renamed ``csv`` to ``file``.
+    # https://github.com/kiranbmore0101/bridge/pull/16756 renamed ``csv`` to ``file``.
     config["allow_file_upload"] = config.pop("allow_csv_upload")
     if "schemas_allowed_for_csv_upload" in config["extra"]:
         config["extra"]["schemas_allowed_for_file_upload"] = config["extra"].pop(

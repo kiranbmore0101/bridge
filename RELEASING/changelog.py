@@ -29,7 +29,7 @@ except ModuleNotFoundError:
     print("PyGitHub is a required package for this script")
     exit(1)
 
-BRIDGE_REPO = "apache/bridge"
+BRIDGE_REPO = "kiranbmore0101/bridge"
 BRIDGE_PULL_REQUEST_TYPES = r"^(fix|feat|chore|refactor|docs|build|ci|/gmi)"
 BRIDGE_RISKY_LABELS = r"^(blocking|risk|hold|revert|security vulnerability)"
 

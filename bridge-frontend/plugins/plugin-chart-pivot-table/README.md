@@ -24,7 +24,7 @@ under the License.
 This plugin provides Pivot Table for Bridge.
 
 If you change the logic of this plugin, please update
-[`pivot_table`](https://github.com/apache/bridge/blob/master/bridge/charts/post_processing.py).
+[`pivot_table`](https://github.com/kiranbmore0101/bridge/blob/master/bridge/charts/post_processing.py).
 
 ### Usage
 

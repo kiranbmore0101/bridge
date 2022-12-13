@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-x-bridge-image: &bridge-image apache/bridge:${TAG:-latest-dev}
+x-bridge-image: &bridge-image kiranbmore0101/bridge:${TAG:-latest-dev}
 x-bridge-depends-on: &bridge-depends-on
   - db
   - redis

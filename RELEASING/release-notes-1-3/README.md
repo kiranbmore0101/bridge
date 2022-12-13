@@ -60,10 +60,10 @@ Also in the works is a new database connection UI, which should make connecting 
 
 # PR Highlights
 
-- [14682](https://github.com/apache/bridge/pull/14682) add ascend engine spec (#14682) (@Daniel Wood)
-- [14420](https://github.com/apache/bridge/pull/14420) feat: API endpoint to validate databases using separate parameters (#14420) (@Beto Dealmeida)
-- [14934](https://github.com/apache/bridge/pull/14934) feat: Adding FORCE_SSL as feature flag in config.py (#14934) (@AAfghahi)
-- [14480](https://github.com/apache/bridge/pull/14480) feat(viz): add funnel chart (#14480) (@Ville Brofeldt)
+- [14682](https://github.com/kiranbmore0101/bridge/pull/14682) add ascend engine spec (#14682) (@Daniel Wood)
+- [14420](https://github.com/kiranbmore0101/bridge/pull/14420) feat: API endpoint to validate databases using separate parameters (#14420) (@Beto Dealmeida)
+- [14934](https://github.com/kiranbmore0101/bridge/pull/14934) feat: Adding FORCE_SSL as feature flag in config.py (#14934) (@AAfghahi)
+- [14480](https://github.com/kiranbmore0101/bridge/pull/14480) feat(viz): add funnel chart (#14480) (@Ville Brofeldt)
 
 
 

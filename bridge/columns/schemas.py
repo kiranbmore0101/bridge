@@ -17,7 +17,7 @@
 """
 Schema for the column model.
 
-This model was introduced in SIP-68 (https://github.com/apache/bridge/issues/14909),
+This model was introduced in SIP-68 (https://github.com/kiranbmore0101/bridge/issues/14909),
 and represents a "column" in a table or dataset. In addition to a column, new models for
 tables, metrics, and datasets were also introduced.
 

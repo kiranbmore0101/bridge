@@ -17,7 +17,7 @@
 """
 Table model.
 
-This model was introduced in SIP-68 (https://github.com/apache/bridge/issues/14909),
+This model was introduced in SIP-68 (https://github.com/kiranbmore0101/bridge/issues/14909),
 and represents a "table" in a given database -- either a physical table or a view. In
 addition to a table, new models for columns, metrics, and datasets were also introduced.
 

@@ -27,42 +27,42 @@ Bridge 1.4 focuses heavily on continuing to polish the core Bridge experience. T
 
 ## User Facing Features
 
-- Charts and dashboards in Bridge can now be certified! In addition, the Edit Dataset modal more accurately reflects state of Certification (especially for Calculated Columns). ([#17335](https://github.com/apache/bridge/pull/17335), [#16454](https://github.com/apache/bridge/pull/16454))
+- Charts and dashboards in Bridge can now be certified! In addition, the Edit Dataset modal more accurately reflects state of Certification (especially for Calculated Columns). ([#17335](https://github.com/kiranbmore0101/bridge/pull/17335), [#16454](https://github.com/kiranbmore0101/bridge/pull/16454))
 
 ![Tab Column](media/calc.png)
 
-- Parquet files can now be uploaded into an existing connected database that has Data Upload enabled. Eventually, the contributor hopes that this foundation can be used to accommodate `feather` and `orc` files. ([#14449](https://github.com/apache/bridge/pull/14449))
+- Parquet files can now be uploaded into an existing connected database that has Data Upload enabled. Eventually, the contributor hopes that this foundation can be used to accommodate `feather` and `orc` files. ([#14449](https://github.com/kiranbmore0101/bridge/pull/14449))
 
-- Tabs can now be added to Column elements in dashboards. ([#16593](https://github.com/apache/bridge/pull/16593))
+- Tabs can now be added to Column elements in dashboards. ([#16593](https://github.com/kiranbmore0101/bridge/pull/16593))
 
 ![Tab Column](media/tab_column.jpg)
 
-- The experience of using alerts and reports have improved in a few minor ways. ([#16335](https://github.com/apache/bridge/pull/16335),[#16281](https://github.com/apache/bridge/pull/16281))
+- The experience of using alerts and reports have improved in a few minor ways. ([#16335](https://github.com/kiranbmore0101/bridge/pull/16335),[#16281](https://github.com/kiranbmore0101/bridge/pull/16281))
 
-- Drag and drop now has a clickable ghost button for an improved user experience. ([#16119](https://github.com/apache/bridge/pull/16119))
+- Drag and drop now has a clickable ghost button for an improved user experience. ([#16119](https://github.com/kiranbmore0101/bridge/pull/16119))
 
 ## Database Experience
 
-- Apache Drill: Bridge can now connect to Apache Drill (thru ODBC / JDBC) and impersonate the currently logged in user. ([#17353](https://github.com/apache/bridge/pull/17353/files)).
+- Apache Drill: Bridge can now connect to Apache Drill (thru ODBC / JDBC) and impersonate the currently logged in user. ([#17353](https://github.com/kiranbmore0101/bridge/pull/17353/files)).
 
-- Firebolt: Bridge now supports the cloud data warehouse Firebolt! ([#16903](https://github.com/apache/bridge/pull/16903)).
+- Firebolt: Bridge now supports the cloud data warehouse Firebolt! ([#16903](https://github.com/kiranbmore0101/bridge/pull/16903)).
 
-- Databricks: Bridge now supports the new [SQL Endpoints in Databricks](https://docs.databricks.com/sql/admin/sql-endpoints.html). ([#16862](https://github.com/apache/bridge/pull/16862))
+- Databricks: Bridge now supports the new [SQL Endpoints in Databricks](https://docs.databricks.com/sql/admin/sql-endpoints.html). ([#16862](https://github.com/kiranbmore0101/bridge/pull/16862))
 
-- Apache Druid: Bridge Explore now can take advantage of support for JOIN's in Druid (note: the `DRUID_JOINS` feature flag needs to be 	enabled). ([#16770](https://github.com/apache/bridge/pull/16770))
+- Apache Druid: Bridge Explore now can take advantage of support for JOIN's in Druid (note: the `DRUID_JOINS` feature flag needs to be 	enabled). ([#16770](https://github.com/kiranbmore0101/bridge/pull/16770))
 
-- AWS Aurora: Bridge now has a separate db_engine_spec for Amazon Aurora. ([#16535](https://github.com/apache/bridge/pull/16535))
+- AWS Aurora: Bridge now has a separate db_engine_spec for Amazon Aurora. ([#16535](https://github.com/kiranbmore0101/bridge/pull/16535))
 
-- Clickhouse: Bridge now includes function names in the auto-complete for SQL Lab. ([#16234](https://github.com/apache/bridge/pull/16234))
+- Clickhouse: Bridge now includes function names in the auto-complete for SQL Lab. ([#16234](https://github.com/kiranbmore0101/bridge/pull/16234))
 
-- Google Sheets: Better support for private Google Sheets was added. ([#16228](https://github.com/apache/bridge/pull/16628))
+- Google Sheets: Better support for private Google Sheets was added. ([#16228](https://github.com/kiranbmore0101/bridge/pull/16628))
 
 
 ## Developer Experience
 
-- The `Makefile` for Bridge has gone through a number of improvements. ([#16327](https://github.com/apache/bridge/pull/16327), [#16533](https://github.com/apache/bridge/pull/16533))
+- The `Makefile` for Bridge has gone through a number of improvements. ([#16327](https://github.com/kiranbmore0101/bridge/pull/16327), [#16533](https://github.com/kiranbmore0101/bridge/pull/16533))
 
-- Add Python instrumentation to pages, showing method calls used to build the page & how long each one took. This requires a configuration flag (see PR for more info). ([#16136](https://github.com/apache/bridge/pull/16136))
+- Add Python instrumentation to pages, showing method calls used to build the page & how long each one took. This requires a configuration flag (see PR for more info). ([#16136](https://github.com/kiranbmore0101/bridge/pull/16136))
 
 ![Pyinstrument](media/pyinstrument.png)
 
@@ -70,9 +70,9 @@ Bridge 1.4 focuses heavily on continuing to polish the core Bridge experience. T
 
 **Breaking Changes**
 
-- [16660](https://github.com/apache/bridge/pull/16660): The `columns` Jinja parameter has been renamed `table_columns` to make the columns query object parameter available in the Jinja context.
-- [16711](https://github.com/apache/bridge/pull/16711): The url_param Jinja function will now by default escape the result. For instance, the value `O'Brien` will now be changed to `O''Brien`. To disable this behavior, call `url_param` with `escape_result` set to `False: url_param("my_key", "my default", escape_result=False)`.
+- [16660](https://github.com/kiranbmore0101/bridge/pull/16660): The `columns` Jinja parameter has been renamed `table_columns` to make the columns query object parameter available in the Jinja context.
+- [16711](https://github.com/kiranbmore0101/bridge/pull/16711): The url_param Jinja function will now by default escape the result. For instance, the value `O'Brien` will now be changed to `O''Brien`. To disable this behavior, call `url_param` with `escape_result` set to `False: url_param("my_key", "my default", escape_result=False)`.
 
 **Changelog**
 
-To see the complete changelog in this release, head to [CHANGELOG.MD](https://github.com/apache/bridge/blob/master/CHANGELOG.md). As mentioned earlier, this release has a MASSIVE amount of bug fixes. The full changelog lists all of them!
+To see the complete changelog in this release, head to [CHANGELOG.MD](https://github.com/kiranbmore0101/bridge/blob/master/CHANGELOG.md). As mentioned earlier, this release has a MASSIVE amount of bug fixes. The full changelog lists all of them!

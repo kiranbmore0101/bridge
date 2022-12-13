@@ -21,7 +21,7 @@ Manually cancel previous GitHub Action workflow runs in queue.
 Example:
   # Set up
   export GITHUB_TOKEN={{ your personal github access token }}
-  export GITHUB_REPOSITORY=apache/bridge
+  export GITHUB_REPOSITORY=kiranbmore0101/bridge
 
   # cancel previous jobs for a PR, will even cancel the running ones
   ./cancel_github_workflows.py 1042
@@ -42,7 +42,7 @@ from dateutil import parser
 from typing_extensions import Literal
 
 github_token = os.environ.get("GITHUB_TOKEN")
-github_repo = os.environ.get("GITHUB_REPOSITORY", "apache/bridge")
+github_repo = os.environ.get("GITHUB_REPOSITORY", "kiranbmore0101/bridge")
 
 
 def request(
@@ -130,7 +130,7 @@ Date:   {date_str}
 @click.option(
     "--repo",
     default=github_repo,
-    help="The github repository name. For example, apache/bridge.",
+    help="The github repository name. For example, kiranbmore0101/bridge.",
 )
 @click.option(
     "--event",

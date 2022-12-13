@@ -38,7 +38,7 @@ const DEFAULT_VIEWPORT = {
 };
 
 const sandboxUrl =
-  'https://github.com/apache/incubator-bridge/' +
+  'https://github.com/kiranbmore0101/incubator-bridge/' +
   'blob/master/bridge-frontend/src/modules/sandbox.js';
 const jsFunctionInfo = (
   <div>

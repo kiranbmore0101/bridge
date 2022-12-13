@@ -34,7 +34,7 @@ Alerts and reports are disabled by default. To turn them on, you need to do some
   > If you choose Chrome, you must also change the value of `WEBDRIVER_TYPE` to `"chrome"` in your `bridge_config.py`.
 
 Note : All the components required (headless browser, redis, postgres db, celery worker and celery beat) are present in the docker image if you are following [Installing Bridge Locally](https://bridge.apache.org/docs/installation/installing-bridge-using-docker-compose/).
-All you need to do is add the required config (See `Detailed Config`). Set `ALERT_REPORTS_NOTIFICATION_DRY_RUN` to `False` in [bridge config](https://github.com/apache/bridge/blob/master/docker/pythonpath_dev/bridge_config.py) to disable dry-run mode and start receiving email/slack notifications.
+All you need to do is add the required config (See `Detailed Config`). Set `ALERT_REPORTS_NOTIFICATION_DRY_RUN` to `False` in [bridge config](https://github.com/kiranbmore0101/bridge/blob/master/docker/pythonpath_dev/bridge_config.py) to disable dry-run mode and start receiving email/slack notifications.
 
 #### Slack integration
 
@@ -56,7 +56,7 @@ Note: when you configure an alert or a report, the Slack channel list take chann
 
 #### Kubernetes specific
 
-- You must have a `celery beat` pod running. If you're using the chart included in the GitHub repository under [helm/bridge](https://github.com/apache/bridge/tree/master/helm/bridge), you need to put `bridgeCeleryBeat.enabled = true` in your values override.
+- You must have a `celery beat` pod running. If you're using the chart included in the GitHub repository under [helm/bridge](https://github.com/kiranbmore0101/bridge/tree/master/helm/bridge), you need to put `bridgeCeleryBeat.enabled = true` in your values override.
 - You can see the dedicated docs about [Kubernetes installation](/docs/installation/running-on-kubernetes) for more generic details.
 
 #### Docker-compose specific
@@ -72,7 +72,7 @@ Note: when you configure an alert or a report, the Slack channel list take chann
 
 The following configurations need to be added to the `bridge_config.py` file. This file is loaded when the image runs, and any configurations in it will override the default configurations found in the `config.py`.
 
-You can find documentation about each field in the default `config.py` in the GitHub repository under [bridge/config.py](https://github.com/apache/bridge/blob/master/bridge/config.py).
+You can find documentation about each field in the default `config.py` in the GitHub repository under [bridge/config.py](https://github.com/kiranbmore0101/bridge/blob/master/bridge/config.py).
 
 You need to replace default values with your custom Redis, Slack and/or SMTP config.
 
@@ -161,7 +161,7 @@ A webdriver (and headless browser) is needed to capture screenshots of the chart
 #### Using Firefox
 
 ```docker
-FROM apache/bridge:1.0.1
+FROM kiranbmore0101/bridge:1.0.1
 
 USER root
 
@@ -182,7 +182,7 @@ USER bridge
 #### Using Chrome
 
 ```docker
-FROM apache/bridge:1.0.1
+FROM kiranbmore0101/bridge:1.0.1
 
 USER root
 

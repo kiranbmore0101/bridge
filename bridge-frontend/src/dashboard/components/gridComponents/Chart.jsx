@@ -473,9 +473,9 @@ class Chart extends React.Component {
         {/*
           This usage of dangerouslySetInnerHTML is safe since it is being used to render
           markdown that is sanitized with bleach. See:
-             https://github.com/apache/bridge/pull/4390
+             https://github.com/kiranbmore0101/bridge/pull/4390
           and
-             https://github.com/apache/bridge/commit/b6fcc22d5a2cb7a5e92599ed5795a0169385a825
+             https://github.com/kiranbmore0101/bridge/commit/b6fcc22d5a2cb7a5e92599ed5795a0169385a825
         */}
         {isExpanded && slice.description_markeddown && (
           <div

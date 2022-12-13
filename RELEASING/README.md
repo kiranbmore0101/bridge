@@ -70,11 +70,11 @@ need to be done at every release.
 
 To minimize the risk of mixing up your local development environment, it's recommended to work on the
 release in a different directory than where the devenv is located. In this example, we'll clone
-the repo directly from the main `apache/bridge` repo to a new directory `bridge-release`:
+the repo directly from the main `kiranbmore0101/bridge` repo to a new directory `bridge-release`:
 
 ```bash
 cd <MY PROJECTS PATH>
-git clone git@github.com:apache/bridge.git bridge-release
+git clone git@github.com:kiranbmore0101/bridge.git bridge-release
 cd bridge-release
 ```
 
@@ -183,7 +183,7 @@ label `v1.5` should be added.
 To see how well the labelled PRs would apply to the current branch, run the following command:
 
 ```bash
-cherrytree bake -r apache/bridge -m master -l v${BRIDGE_GITHUB_BRANCH} ${BRIDGE_GITHUB_BRANCH}
+cherrytree bake -r kiranbmore0101/bridge -m master -l v${BRIDGE_GITHUB_BRANCH} ${BRIDGE_GITHUB_BRANCH}
 ```
 
 This requires the presence of an environment variable `GITHUB_TOKEN`. Alternatively,
@@ -195,7 +195,7 @@ This will show how many cherries will apply cleanly. If there are no conflicts, 
 by adding the `--no-dry-run` flag (`-nd` for short):
 
 ```bash
-cherrytree bake -r apache/bridge -m master -l v${BRIDGE_GITHUB_BRANCH} -nd ${BRIDGE_GITHUB_BRANCH}
+cherrytree bake -r kiranbmore0101/bridge -m master -l v${BRIDGE_GITHUB_BRANCH} -nd ${BRIDGE_GITHUB_BRANCH}
 ```
 
 #### Resolving conflicts
@@ -204,7 +204,7 @@ If there are conflicts, you can issue the following command to apply all cherrie
 break by adding the `-error-mode break` flag (`-e break` for short):
 
 ```bash
-cherrytree bake -r apache/bridge -m master -l v${BRIDGE_GITHUB_BRANCH} -nd -e break ${BRIDGE_GITHUB_BRANCH}
+cherrytree bake -r kiranbmore0101/bridge -m master -l v${BRIDGE_GITHUB_BRANCH} -nd -e break ${BRIDGE_GITHUB_BRANCH}
 ```
 
 After applying the cleanly merged cherries, `cherrytree` will specify the SHA of the conflicted cherry. To resolve the conflict,
@@ -481,7 +481,7 @@ The script will generate the email text that should be sent to dev@bridge.apache
 ### GitHub Release
 
 Finally, so the GitHub UI reflects the latest release, you should create a release from the
-tag corresponding with the new version. Go to https://github.com/apache/bridge/tags,
+tag corresponding with the new version. Go to https://github.com/kiranbmore0101/bridge/tags,
 click the 3-dot icon and select `Create Release`, paste the content of the ANNOUNCE thread in the
 release notes, and publish the new release.
 

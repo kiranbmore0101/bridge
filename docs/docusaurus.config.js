@@ -139,7 +139,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/apache/bridge/tree/master/docs',
+          editUrl: 'https://github.com/kiranbmore0101/bridge/tree/master/docs',
         },
         blog: {
           showReadingTime: true,
@@ -207,7 +207,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/apache/bridge',
+                href: 'https://github.com/kiranbmore0101/bridge',
               },
               {
                 label: 'Slack',
@@ -224,7 +224,7 @@ const config = {
             ],
           },
           {
-            href: 'https://github.com/apache/bridge',
+            href: 'https://github.com/kiranbmore0101/bridge',
             position: 'right',
             class: 'github-logo-container',
           },

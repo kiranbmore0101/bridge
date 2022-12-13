@@ -27,7 +27,7 @@ Apache Bridge is a modern, enterprise-ready business intelligence web applicatio
 
 ## Source Code
 
-* <https://github.com/apache/bridge>
+* <https://github.com/kiranbmore0101/bridge>
 
 ## TL;DR
 
@@ -65,7 +65,7 @@ helm install my-bridge bridge/bridge
 | extraVolumes | list | `[]` |  |
 | hostAliases | list | `[]` | Custom hostAliases for all bridge pods # https://kubernetes.io/docs/tasks/network/customize-hosts-file-for-pods/ |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
-| image.repository | string | `"apache/bridge"` |  |
+| image.repository | string | `"kiranbmore0101/bridge"` |  |
 | image.tag | string | `"latest"` |  |
 | imagePullSecrets | list | `[]` |  |
 | ingress.annotations | object | `{}` |  |
@@ -188,10 +188,10 @@ helm install my-bridge bridge/bridge
 | bridgeNode.startupProbe.timeoutSeconds | int | `1` |  |
 | bridgeNode.strategy | object | `{}` |  |
 | bridgeWebsockets.command | list | `[]` |  |
-| bridgeWebsockets.config | object | see `values.yaml` | The config.json to pass to the server, see https://github.com/apache/bridge/tree/master/bridge-websocket Note that the configuration can also read from environment variables (which will have priority), see https://github.com/apache/bridge/blob/master/bridge-websocket/src/config.ts for a list of supported variables |
+| bridgeWebsockets.config | object | see `values.yaml` | The config.json to pass to the server, see https://github.com/kiranbmore0101/bridge/tree/master/bridge-websocket Note that the configuration can also read from environment variables (which will have priority), see https://github.com/kiranbmore0101/bridge/blob/master/bridge-websocket/src/config.ts for a list of supported variables |
 | bridgeWebsockets.containerSecurityContext | object | `{}` |  |
 | bridgeWebsockets.deploymentAnnotations | object | `{}` |  |
-| bridgeWebsockets.enabled | bool | `false` | This is only required if you intend to use `GLOBAL_ASYNC_QUERIES` in `ws` mode see https://github.com/apache/bridge/blob/master/CONTRIBUTING.md#async-chart-queries |
+| bridgeWebsockets.enabled | bool | `false` | This is only required if you intend to use `GLOBAL_ASYNC_QUERIES` in `ws` mode see https://github.com/kiranbmore0101/bridge/blob/master/CONTRIBUTING.md#async-chart-queries |
 | bridgeWebsockets.image.pullPolicy | string | `"IfNotPresent"` |  |
 | bridgeWebsockets.image.repository | string | `"oneacrefund/bridge-websocket"` | There is no official image (yet), this one is community-supported |
 | bridgeWebsockets.image.tag | string | `"latest"` |  |

@@ -33,7 +33,7 @@ export const defaultTooltip = {
     sizes: { contentSize: [number, number]; viewSize: [number, number] },
   ) => {
     // algorithm copy-pasted from here:
-    // https://github.com/apache/echarts/issues/5004#issuecomment-559668309
+    // https://github.com/kiranbmore0101/echarts/issues/5004#issuecomment-559668309
 
     // The chart canvas position
     const canvasRect = tooltipDom.parentElement

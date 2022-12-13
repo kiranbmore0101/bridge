@@ -111,12 +111,12 @@ little bit helps, and credit will always be given.
 
 Here's a list of repositories that contain Bridge-related packages:
 
-- [apache/bridge](https://github.com/apache/bridge)
+- [kiranbmore0101/bridge](https://github.com/kiranbmore0101/bridge)
   is the main repository containing the `apache-bridge` Python package
   distributed on
   [pypi](https://pypi.org/project/apache-bridge/). This repository
   also includes Bridge's main TypeScript/JavaScript bundles and react apps under
-  the [bridge-frontend](https://github.com/apache/bridge/tree/master/bridge-frontend)
+  the [bridge-frontend](https://github.com/kiranbmore0101/bridge/tree/master/bridge-frontend)
   folder.
 - [github.com/apache-bridge](https://github.com/apache-bridge) is the
   GitHub organization under which we manage Bridge-related
@@ -144,7 +144,7 @@ The best way is to file an issue on GitHub:
 - Keep the scope as narrow as possible, to make it easier to implement.
 - Remember that this is a volunteer-driven project, and that contributions are welcome :)
 
-For large features or major changes to codebase, please create **Bridge Improvement Proposal (SIP)**. See template from [SIP-0](https://github.com/apache/bridge/issues/5602)
+For large features or major changes to codebase, please create **Bridge Improvement Proposal (SIP)**. See template from [SIP-0](https://github.com/kiranbmore0101/bridge/issues/5602)
 
 ### Fix Bugs
 
@@ -756,7 +756,7 @@ def sqrt(x: Union[float, int]) -> Union[float, int]:
 
 ### TypeScript Typing
 
-TypeScript is fully supported and is the recommended language for writing all new frontend components. When modifying existing functions/components, migrating to TypeScript is appreciated, but not required. Examples of migrating functions/components to TypeScript can be found in [#9162](https://github.com/apache/bridge/pull/9162) and [#9180](https://github.com/apache/bridge/pull/9180).
+TypeScript is fully supported and is the recommended language for writing all new frontend components. When modifying existing functions/components, migrating to TypeScript is appreciated, but not required. Examples of migrating functions/components to TypeScript can be found in [#9162](https://github.com/kiranbmore0101/bridge/pull/9162) and [#9180](https://github.com/kiranbmore0101/bridge/pull/9180).
 
 ## Testing
 
@@ -793,7 +793,7 @@ SQLite databases which will be cleared each time before the group of test
 commands are invoked.
 
 There is also a utility script included in the Bridge codebase to run python integration tests. The [readme can be
-found here](https://github.com/apache/bridge/tree/master/scripts/tests)
+found here](https://github.com/kiranbmore0101/bridge/tree/master/scripts/tests)
 
 To run all integration tests for example, run this script from the root directory:
 
@@ -863,7 +863,7 @@ npm run cypress-debug
 CYPRESS_BASE_URL=<your url> npm run cypress open
 ```
 
-See [`bridge-frontend/cypress_build.sh`](https://github.com/apache/bridge/blob/master/bridge-frontend/cypress_build.sh).
+See [`bridge-frontend/cypress_build.sh`](https://github.com/kiranbmore0101/bridge/blob/master/bridge-frontend/cypress_build.sh).
 
 As an alternative you can use docker-compose environment for testing:
 
@@ -1161,7 +1161,7 @@ Submissions will be considered for submission (or removal) on a case-by-case bas
 
 1. Alter the model you want to change. This example will add a `Column` Annotations model.
 
-   [Example commit](https://github.com/apache/bridge/commit/6c25f549384d7c2fc288451222e50493a7b14104)
+   [Example commit](https://github.com/kiranbmore0101/bridge/commit/6c25f549384d7c2fc288451222e50493a7b14104)
 
 1. Generate the migration file
 
@@ -1171,7 +1171,7 @@ Submissions will be considered for submission (or removal) on a case-by-case bas
 
    This will generate a file in `migrations/version/{SHA}_this_will_be_in_the_migration_filename.py`.
 
-   [Example commit](https://github.com/apache/bridge/commit/d3e83b0fd572c9d6c1297543d415a332858e262)
+   [Example commit](https://github.com/kiranbmore0101/bridge/commit/d3e83b0fd572c9d6c1297543d415a332858e262)
 
 1. Upgrade the DB
 
@@ -1191,7 +1191,7 @@ Submissions will be considered for submission (or removal) on a case-by-case bas
 
    Since there is a new column, we need to add it to the AppBuilder Model view.
 
-   [Example commit](https://github.com/apache/bridge/pull/5745/commits/6220966e2a0a0cf3e6d87925491f8920fe8a3458)
+   [Example commit](https://github.com/kiranbmore0101/bridge/pull/5745/commits/6220966e2a0a0cf3e6d87925491f8920fe8a3458)
 
 1. Test the migration's `down` method
 
@@ -1328,7 +1328,7 @@ The following configuration settings are available for async queries (see config
 - `GLOBAL_ASYNC_QUERIES_TRANSPORT` - available options: "polling" (HTTP, default), "ws" (WebSocket, requires running bridge-websocket server)
 - `GLOBAL_ASYNC_QUERIES_POLLING_DELAY` - the time (in ms) between polling requests
 
-More information on the async query feature can be found in [SIP-39](https://github.com/apache/bridge/issues/9190).
+More information on the async query feature can be found in [SIP-39](https://github.com/kiranbmore0101/bridge/issues/9190).
 
 ## Chart Parameters
 
@@ -1393,7 +1393,7 @@ Note not all fields are correctly categorized. The fields vary based on visualiz
 | Field                                                                                                  | Type                                              | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `adhoc_filters`                                                                                        | _array(object)_                                   | The **Filters** widget                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| `extra_filters`                                                                                        | _array(object)_                                   | Another pathway to the **Filters** widget.<br/>It is generally used to pass dashboard filter parameters to a chart.<br/>It can be used for appending additional filters to a chart that has been saved with its own filters on an ad-hoc basis if the chart is being used as a standalone widget.<br/><br/>For implementation examples see : [utils test.py](https://github.com/apache/bridge/blob/66a4c94a1ed542e69fe6399bab4c01d4540486cf/tests/utils_tests.py#L181)<br/>For insight into how bridge processes the contents of this parameter see: [exploreUtils/index.js](https://github.com/apache/bridge/blob/93c7f5bb446ec6895d7702835f3157426955d5a9/bridge-frontend/src/explore/exploreUtils/index.js#L159) |
+| `extra_filters`                                                                                        | _array(object)_                                   | Another pathway to the **Filters** widget.<br/>It is generally used to pass dashboard filter parameters to a chart.<br/>It can be used for appending additional filters to a chart that has been saved with its own filters on an ad-hoc basis if the chart is being used as a standalone widget.<br/><br/>For implementation examples see : [utils test.py](https://github.com/kiranbmore0101/bridge/blob/66a4c94a1ed542e69fe6399bab4c01d4540486cf/tests/utils_tests.py#L181)<br/>For insight into how bridge processes the contents of this parameter see: [exploreUtils/index.js](https://github.com/kiranbmore0101/bridge/blob/93c7f5bb446ec6895d7702835f3157426955d5a9/bridge-frontend/src/explore/exploreUtils/index.js#L159) |
 | `columns`                                                                                              | _array(string)_                                   | The **Breakdowns** widget                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | `groupby`                                                                                              | _array(string)_                                   | The **Group by** or **Series** widget                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | `limit`                                                                                                | _number_                                          | The **Series Limit** widget                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |

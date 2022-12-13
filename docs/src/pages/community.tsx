@@ -28,7 +28,7 @@ const links = [
     'interact with other Bridge users and community members',
   ],
   [
-    'https://github.com/apache/bridge',
+    'https://github.com/kiranbmore0101/bridge',
     'GitHub',
     'create tickets to report issues, report bugs, and suggest new features',
   ],
@@ -53,7 +53,7 @@ const links = [
     'join our monthly virtual meetups and register for any upcoming events',
   ],
   [
-    'https://github.com/apache/bridge/blob/master/RESOURCES/INTHEWILD.md',
+    'https://github.com/kiranbmore0101/bridge/blob/master/RESOURCES/INTHEWILD.md',
     'Organizations',
     'a list of some of the organizations using Bridge in production',
   ],

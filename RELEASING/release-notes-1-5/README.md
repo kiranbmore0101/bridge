@@ -36,7 +36,7 @@ when available.
 
 - Complex dashboards with lots of native filters and charts will render considerably
   faster. See the videos that shows the rendering time of a complex dashboard go from
-  11 to 3 seconds: [#19064](https://github.com/apache/bridge/pull/19064). In
+  11 to 3 seconds: [#19064](https://github.com/kiranbmore0101/bridge/pull/19064). In
   addition, applying filters and switching tabs is also much smoother.
 - The Native Filter Bar has been redesigned, along with moving the "Apply" and
   "Clear all" buttons to the bottom:
@@ -64,7 +64,7 @@ when available.
 - Previously it was possible for Dashboards with lots of filters to cause an error.
   A similar issue existed on Explore. Now Bridge stores Dashboard and Explore state
   in the cache (as opposed to the URL), eliminating the infamous
-  [Long URL Problem](https://github.com/apache/bridge/issues/17086).
+  [Long URL Problem](https://github.com/kiranbmore0101/bridge/issues/17086).
 - Previously permanent links to Dashboard and Explore pages were in fact shortened URLS
   that relied on state being stored in the URL (see Long URL Problem above). In
   addition, the links used numerical ids and didn't check user permissions making it
@@ -80,7 +80,7 @@ when available.
 
 - A new feature flag `GENERIC_CHART_AXES` has been added that makes it possible to
   use a non-temporal x-axis on the ECharts Timeseries chart
-  ([#17917](https://github.com/apache/bridge/pull/17917)). When enabled, a new
+  ([#17917](https://github.com/kiranbmore0101/bridge/pull/17917)). When enabled, a new
   control "X Axis" is added to the control panel of ECharts line, area, bar, step and
   scatter charts, which makes it possible to use categorical or numerical x-axes on
   those charts.
@@ -90,29 +90,29 @@ when available.
 ## Database Experience
 
 - DuckDB: Add support for database:
-  [#19317](https://github.com/apache/bridge/pull/19317)
+  [#19317](https://github.com/kiranbmore0101/bridge/pull/19317)
 
 - Kusto: Add support for Azure Data Explorer (Kusto):
-  [#17898](https://github.com/apache/bridge/pull/17898)
+  [#17898](https://github.com/kiranbmore0101/bridge/pull/17898)
 
 - Trino: Add server cert support and new auth methods:
-  [#17593](https://github.com/apache/bridge/pull/17593) and
-  [#16346](https://github.com/apache/bridge/pull/16346)
+  [#17593](https://github.com/kiranbmore0101/bridge/pull/17593) and
+  [#16346](https://github.com/kiranbmore0101/bridge/pull/16346)
 
 - Microsoft SQL Server (MSSQL): support using CTEs in virtual tables:
-  [#18567](https://github.com/apache/bridge/pull/18567)
+  [#18567](https://github.com/kiranbmore0101/bridge/pull/18567)
 
 - Teradata and MSSQL: add support for TOP limit syntax:
-  [#18746](https://github.com/apache/bridge/pull/18746) and
-  [#18240](https://github.com/apache/bridge/pull/18240)
+  [#18746](https://github.com/kiranbmore0101/bridge/pull/18746) and
+  [#18240](https://github.com/kiranbmore0101/bridge/pull/18240)
 
 - Apache Drill: User impersonation using `drill+sadrill`:
-  [#19252](https://github.com/apache/bridge/pull/19252)
+  [#19252](https://github.com/kiranbmore0101/bridge/pull/19252)
 
 ## Developer Experience
 
 - `bridge-ui` has now been integrated into the Bridge codebase as per
-  [SIP-58](https://github.com/apache/bridge/issues/13013) dubbed "Monorepo". This
+  [SIP-58](https://github.com/kiranbmore0101/bridge/issues/13013) dubbed "Monorepo". This
   makes development of plugins that ship with Bridge considerably simpler. In
   addition, it makes it possible to align `bridge-ui` releases with official Bridge
   releases.
@@ -122,21 +122,21 @@ when available.
 **Breaking Changes**
 
 - Bump `mysqlclient` from v1 to v2:
-  [#17556](https://github.com/apache/bridge/pull/17556)
+  [#17556](https://github.com/kiranbmore0101/bridge/pull/17556)
 - Single and double quotes will no longer be removed from filter values:
-  [#17881](https://github.com/apache/bridge/pull/17881)
+  [#17881](https://github.com/kiranbmore0101/bridge/pull/17881)
 - Previously `QUERY_COST_FORMATTERS_BY_ENGINE`, `SQL_VALIDATORS_BY_ENGINE` and
   `SCHEDULED_QUERIES` were expected to be defined in the feature flag dictionary in
   the `config.py` file. These should now be defined as a top-level config, with the
   feature flag dictionary being reserved for boolean only values:
-  [#15254](https://github.com/apache/bridge/pull/15254)
+  [#15254](https://github.com/kiranbmore0101/bridge/pull/15254)
 - All Bridge CLI commands (init, load_examples and etc) require setting the
   `FLASK_APP` environment variable (which is set by default when `.flaskenv` is loaded):
-  [#17539](https://github.com/apache/bridge/pull/17539)
+  [#17539](https://github.com/kiranbmore0101/bridge/pull/17539)
 
 **Changelog**
 
 To see the complete changelog in this release, head to
-[CHANGELOG.MD](https://github.com/apache/bridge/blob/1.5/CHANGELOG.md).
+[CHANGELOG.MD](https://github.com/kiranbmore0101/bridge/blob/1.5/CHANGELOG.md).
 As mentioned earlier, this release has a MASSIVE amount of bug fixes. The full
 changelog lists all of them!

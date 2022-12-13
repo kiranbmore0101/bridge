@@ -419,7 +419,7 @@ class TestImportDatabasesCommand(BridgeTestCase):
         """
         Test that a database can be imported with broken schema.
 
-        https://github.com/apache/bridge/pull/16756 renamed some fields, changing
+        https://github.com/kiranbmore0101/bridge/pull/16756 renamed some fields, changing
         the V1 schema. This test ensures that we can import databases that were
         exported with the broken schema.
         """

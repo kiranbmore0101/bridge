@@ -21,7 +21,7 @@ under the License.
 
 Here's a list of organizations, broken down into broad industry categories, that have taken the time to send a PR to let
 the world know they are using Apache Bridge. If you are a user and want to be recognized,
-all you have to do is file a simple PR [like this one](https://github.com/apache/bridge/pull/10122). If you think
+all you have to do is file a simple PR [like this one](https://github.com/kiranbmore0101/bridge/pull/10122). If you think
 the categorization is inaccurate, please file a PR with your correction as well.
 Join our growing community!
 

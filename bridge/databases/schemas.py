@@ -612,7 +612,7 @@ class ImportV1DatabaseExtraSchema(Schema):
         """
         Fixes for ``schemas_allowed_for_csv_upload``.
         """
-        # Fix for https://github.com/apache/bridge/pull/16756, which temporarily
+        # Fix for https://github.com/kiranbmore0101/bridge/pull/16756, which temporarily
         # changed the V1 schema. We need to support exports made after that PR and
         # before this PR.
         if "schemas_allowed_for_file_upload" in data:
@@ -649,7 +649,7 @@ class ImportV1DatabaseSchema(Schema):
         """
         Fix for ``allow_csv_upload`` .
         """
-        # Fix for https://github.com/apache/bridge/pull/16756, which temporarily
+        # Fix for https://github.com/kiranbmore0101/bridge/pull/16756, which temporarily
         # changed the V1 schema. We need to support exports made after that PR and
         # before this PR.
         if "allow_file_upload" in data:

@@ -29,7 +29,7 @@ To use this feature, Bridge needs to be configured to enable global async querie
 
 ## Architecture
 
-This implementation is based on the architecture defined in [SIP-39](https://github.com/apache/bridge/issues/9190).
+This implementation is based on the architecture defined in [SIP-39](https://github.com/kiranbmore0101/bridge/issues/9190).
 
 ### Streams
 
@@ -93,7 +93,7 @@ GLOBAL_ASYNC_QUERIES_JWT_COOKIE_NAME
 GLOBAL_ASYNC_QUERIES_JWT_SECRET
 ```
 
-More info on Bridge configuration values for async queries: https://github.com/apache/bridge/blob/master/CONTRIBUTING.md#async-chart-queries
+More info on Bridge configuration values for async queries: https://github.com/kiranbmore0101/bridge/blob/master/CONTRIBUTING.md#async-chart-queries
 
 ## StatsD monitoring
 

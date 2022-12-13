@@ -50,10 +50,10 @@ def upgrade():
     Remove any erroneous time grainularity fields from slices foor those visualization
     types which do not support time granularity.
 
-    :see: https://github.com/apache/bridge/pull/8674
-    :see: https://github.com/apache/bridge/pull/8764
-    :see: https://github.com/apache/bridge/pull/8800
-    :see: https://github.com/apache/bridge/pull/8825
+    :see: https://github.com/kiranbmore0101/bridge/pull/8674
+    :see: https://github.com/kiranbmore0101/bridge/pull/8764
+    :see: https://github.com/kiranbmore0101/bridge/pull/8800
+    :see: https://github.com/kiranbmore0101/bridge/pull/8825
     """
 
     bind = op.get_bind()

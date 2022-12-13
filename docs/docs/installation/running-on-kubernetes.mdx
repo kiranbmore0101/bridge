@@ -33,7 +33,7 @@ bridge/bridge       0.1.1           1.0             Apache Bridge is a modern, e
 
 3. Configure your setting overrides
 
-Just like any typical Helm chart, you'll need to craft a `values.yaml` file that would define/override any of the values exposed into the default [values.yaml](https://github.com/apache/bridge/tree/master/helm/bridge/values.yaml), or from any of the dependent charts it depends on:
+Just like any typical Helm chart, you'll need to craft a `values.yaml` file that would define/override any of the values exposed into the default [values.yaml](https://github.com/kiranbmore0101/bridge/tree/master/helm/bridge/values.yaml), or from any of the dependent charts it depends on:
 
 - [bitnami/redis](https://artifacthub.io/packages/helm/bitnami/redis)
 - [bitnami/postgresql](https://artifacthub.io/packages/helm/bitnami/postgresql)
@@ -285,7 +285,7 @@ bridgeWorker:
     - -c
     - |
       # Install chrome webdriver
-      # See https://github.com/apache/bridge/blob/4fa3b6c7185629b87c27fc2c0e5435d458f7b73d/docs/src/pages/docs/installation/email_reports.mdx
+      # See https://github.com/kiranbmore0101/bridge/blob/4fa3b6c7185629b87c27fc2c0e5435d458f7b73d/docs/src/pages/docs/installation/email_reports.mdx
       apt update
       wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
       apt install -y --no-install-recommends ./google-chrome-stable_current_amd64.deb

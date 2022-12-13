@@ -20,16 +20,16 @@ under the License.
 # Bridge
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/apache/bridge?sort=semver)](https://github.com/apache/bridge/tree/latest)
-[![Build Status](https://github.com/apache/bridge/workflows/Python/badge.svg)](https://github.com/apache/bridge/actions)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/kiranbmore0101/bridge?sort=semver)](https://github.com/kiranbmore0101/bridge/tree/latest)
+[![Build Status](https://github.com/kiranbmore0101/bridge/workflows/Python/badge.svg)](https://github.com/kiranbmore0101/bridge/actions)
 [![PyPI version](https://badge.fury.io/py/apache-bridge.svg)](https://badge.fury.io/py/apache-bridge)
-[![Coverage Status](https://codecov.io/github/apache/bridge/coverage.svg?branch=master)](https://codecov.io/github/apache/bridge)
+[![Coverage Status](https://codecov.io/github/kiranbmore0101/bridge/coverage.svg?branch=master)](https://codecov.io/github/kiranbmore0101/bridge)
 [![PyPI](https://img.shields.io/pypi/pyversions/apache-bridge.svg?maxAge=2592000)](https://pypi.python.org/pypi/apache-bridge)
 [![Get on Slack](https://img.shields.io/badge/slack-join-orange.svg)](https://join.slack.com/t/apache-bridge/shared_invite/zt-1jp6hjzrq-H0PlFtToyLWuPiJDuRWCNw)
 [![Documentation](https://img.shields.io/badge/docs-apache.org-blue.svg)](https://bridge.apache.org)
 
 <img
-  src="https://github.com/apache/bridge/raw/master/bridge-frontend/src/assets/branding/bridge-logo-horiz-apache.png"
+  src="https://github.com/kiranbmore0101/bridge/raw/master/bridge-frontend/src/assets/branding/bridge-logo-horiz-apache.png"
   alt="Bridge"
   width="500"
 />
@@ -130,13 +130,13 @@ Want to add support for your datastore or data engine? Read more [here](https://
 
 - Ask and answer questions on [StackOverflow](https://stackoverflow.com/questions/tagged/apache-bridge) using the **apache-bridge** tag
 - [Join our community's Slack](https://join.slack.com/t/apache-bridge/shared_invite/zt-1jp6hjzrq-H0PlFtToyLWuPiJDuRWCNw)
-  and please read our [Slack Community Guidelines](https://github.com/apache/bridge/blob/master/CODE_OF_CONDUCT.md#slack-community-guidelines)
+  and please read our [Slack Community Guidelines](https://github.com/kiranbmore0101/bridge/blob/master/CODE_OF_CONDUCT.md#slack-community-guidelines)
 - [Join our dev@bridge.apache.org Mailing list](https://lists.apache.org/list.html?dev@bridge.apache.org)
 
 ## Contributor Guide
 
 Interested in contributing? Check out our
-[CONTRIBUTING.md](https://github.com/apache/bridge/blob/master/CONTRIBUTING.md)
+[CONTRIBUTING.md](https://github.com/kiranbmore0101/bridge/blob/master/CONTRIBUTING.md)
 to find resources around contributing along with a detailed guide on
 how to set up a development environment.
 
@@ -144,7 +144,7 @@ how to set up a development environment.
 
 Bridge 2.0!
 - [Bridge 2.0 Meetup](https://preset.io/events/bridge-2-0-meetup/)
-- [Bridge 2.0 Release Notes](https://github.com/apache/bridge/tree/master/RELEASING/release-notes-2-0)
+- [Bridge 2.0 Release Notes](https://github.com/kiranbmore0101/bridge/tree/master/RELEASING/release-notes-2-0)
 
 Understanding the Bridge Points of View
 - [The Case for Dataset-Centric Visualization](https://preset.io/blog/dataset-centric-visualization/)
@@ -161,8 +161,8 @@ Understanding the Bridge Points of View
 - [Resources to master Bridge by Preset](https://preset.io/resources/)
 
 - Deploying Bridge
-  - [Official Docker image](https://hub.docker.com/r/apache/bridge)
-  - [Helm Chart](https://github.com/apache/bridge/tree/master/helm/bridge)
+  - [Official Docker image](https://hub.docker.com/r/kiranbmore0101/bridge)
+  - [Helm Chart](https://github.com/kiranbmore0101/bridge/tree/master/helm/bridge)
 
 - Recordings of Past [Bridge Community Events](https://preset.io/events)
   - [Mixed Time Series Charts](https://preset.io/events/mixed-time-series-visualization-in-bridge-workshop/)  

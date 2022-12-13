@@ -59,7 +59,7 @@ extraEnv:
   # Different gunicorn settings, refer to the gunicorn documentation
   # https://docs.gunicorn.org/en/stable/settings.html#
   # These variables are used as Flags at the gunicorn startup
-  # https://github.com/apache/bridge/blob/master/docker/run-server.sh#L22
+  # https://github.com/kiranbmore0101/bridge/blob/master/docker/run-server.sh#L22
   # Extend timeout to allow long running queries.
   # GUNICORN_TIMEOUT: 300
   # Increase the gunicorn worker amount, can improve performance drastically
@@ -182,7 +182,7 @@ configMountPath: "/app/pythonpath"
 extraConfigMountPath: "/app/configs"
 
 image:
-  repository: apache/bridge
+  repository: kiranbmore0101/bridge
   tag: latest
   pullPolicy: IfNotPresent
 
@@ -513,7 +513,7 @@ bridgeCeleryFlower:
 
 bridgeWebsockets:
   # -- This is only required if you intend to use `GLOBAL_ASYNC_QUERIES` in `ws` mode
-  # see https://github.com/apache/bridge/blob/master/CONTRIBUTING.md#async-chart-queries
+  # see https://github.com/kiranbmore0101/bridge/blob/master/CONTRIBUTING.md#async-chart-queries
   enabled: false
   replicaCount: 1
   ingress:
@@ -524,8 +524,8 @@ bridgeWebsockets:
     repository: oneacrefund/bridge-websocket
     tag: latest
     pullPolicy: IfNotPresent
-  # -- The config.json to pass to the server, see https://github.com/apache/bridge/tree/master/bridge-websocket
-  # Note that the configuration can also read from environment variables (which will have priority), see https://github.com/apache/bridge/blob/master/bridge-websocket/src/config.ts for a list of supported variables
+  # -- The config.json to pass to the server, see https://github.com/kiranbmore0101/bridge/tree/master/bridge-websocket
+  # Note that the configuration can also read from environment variables (which will have priority), see https://github.com/kiranbmore0101/bridge/blob/master/bridge-websocket/src/config.ts for a list of supported variables
   # @default -- see `values.yaml`
   config:
     {
