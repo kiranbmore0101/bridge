@@ -1,0 +1,55 @@
+{
+  "name": "@bridge-ui/legacy-preset-chart-deckgl",
+  "version": "0.4.13",
+  "description": "Bridge Legacy Chart - deck.gl",
+  "keywords": [
+    "bridge"
+  ],
+  "homepage": "https://bridge.apache.org/",
+  "bugs": {
+    "url": "https://github.com/kiranbmore0101/bridge/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiranbmore0101/bridge.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Bridge",
+  "sideEffects": true,
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "dependencies": {
+    "@mapbox/geojson-extent": "^1.0.1",
+    "@math.gl/web-mercator": "^3.2.2",
+    "@types/d3-array": "^2.0.0",
+    "bootstrap-slider": "^10.0.0",
+    "d3-array": "^1.2.4",
+    "d3-color": "^1.4.1",
+    "d3-scale": "^3.0.0",
+    "deck.gl": "8.5.2",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.20.1",
+    "mousetrap": "^1.6.1",
+    "prop-types": "^15.6.0",
+    "react-bootstrap-slider": "2.1.5",
+    "underscore": "^1.8.3",
+    "urijs": "^1.19.8",
+    "xss": "^1.0.10"
+  },
+  "peerDependencies": {
+    "@bridge-ui/chart-controls": "*",
+    "@bridge-ui/core": "*",
+    "mapbox-gl": "*",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-map-gl": "^6.1.19"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "compilerOptions": {
+    /* Type Checking */
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+
+    /* Modules */
+    "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "@bridge-ui/core": ["./packages/bridge-ui-core/src"],
+      "@bridge-ui/chart-controls": [
+        "./packages/bridge-ui-chart-controls/src"
+      ],
+      "@bridge-ui/legacy-plugin-chart-*": [
+        "./plugins/legacy-plugin-chart-*/src"
+      ],
+      "@bridge-ui/legacy-preset-chart-*": [
+        "./plugins/legacy-preset-chart-*/src"
+      ],
+      "@bridge-ui/plugin-chart-*": ["./plugins/plugin-chart-*/src"],
+      "@bridge-ui/preset-chart-*": ["./plugins/preset-chart-*/src"],
+      "@bridge-ui/switchboard": ["./packages/bridge-ui-switchboard/src"]
+    },
+    "types": [
+      "@emotion/react/types/css-prop",
+      "jest",
+      "@testing-library/jest-dom",
+      "@types/node"
+    ],
+
+    /* Emit */
+    "declaration": true,
+    "declarationMap": true,
+    "importHelpers": false,
+    "noEmitOnError": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+
+    /* JavaScript Support */
+    "allowJs": true,
+
+    /* Interop Constraints */
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Backwards Compatibility */
+    "suppressImplicitAnyIndexErrors": true,
+
+    /* Language and Environment */
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+
+    /* Projects */
+    "composite": true,
+
+    /* Completeness */
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "./packages/generator-bridge/test/**/*"
+  ],
+  "include": [
+    "./src/**/*",
+    "./spec/**/*",
+    "./packages/*/src/**/*",
+    "./packages/*/types/**/*",
+    "./plugins/*/src/**/*",
+    "./plugins/*/types/**/*",
+    "./packages/*/test/**/*",
+    "./plugins/*/test/**/*"
+  ]
+}

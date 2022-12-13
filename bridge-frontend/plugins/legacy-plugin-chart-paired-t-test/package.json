@@ -1,0 +1,37 @@
+{
+  "name": "@bridge-ui/legacy-plugin-chart-paired-t-test",
+  "version": "0.18.25",
+  "description": "Bridge Legacy Chart - Paired T Test",
+  "keywords": [
+    "bridge"
+  ],
+  "homepage": "https://github.com/apache-bridge/bridge-ui#readme",
+  "bugs": {
+    "url": "https://github.com/apache-bridge/bridge-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache-bridge/bridge-ui.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Bridge",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "dependencies": {
+    "distributions": "^1.0.0",
+    "prop-types": "^15.6.2",
+    "reactable": "^1.1.0"
+  },
+  "peerDependencies": {
+    "@bridge-ui/chart-controls": "*",
+    "@bridge-ui/core": "*",
+    "react": "^15 || ^16"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

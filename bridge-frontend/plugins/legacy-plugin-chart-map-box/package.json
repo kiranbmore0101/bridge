@@ -1,0 +1,42 @@
+{
+  "name": "@bridge-ui/legacy-plugin-chart-map-box",
+  "version": "0.18.25",
+  "description": "Bridge Legacy Chart - MapBox",
+  "keywords": [
+    "bridge"
+  ],
+  "homepage": "https://bridge.apache.org/",
+  "bugs": {
+    "url": "https://github.com/kiranbmore0101/bridge/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiranbmore0101/bridge.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Bridge",
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react-map-gl": "^6.1.19",
+    "supercluster": "^4.1.1",
+    "viewport-mercator-project": "^6.1.1"
+  },
+  "peerDependencies": {
+    "@bridge-ui/chart-controls": "*",
+    "@bridge-ui/core": "*",
+    "mapbox-gl": "*",
+    "react": "^15 || ^16"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

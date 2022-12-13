@@ -1,0 +1,33 @@
+{
+  "name": "@bridge-ui/switchboard",
+  "version": "0.18.26-0",
+  "description": "Switchboard is a library to make it easier to communicate across browser windows using the MessageChannel API",
+  "sideEffects": false,
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "esm",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiranbmore0101/bridge.git"
+  },
+  "keywords": [
+    "switchboard",
+    "iframe",
+    "communication",
+    "messagechannel",
+    "messageport",
+    "postmessage"
+  ],
+  "author": "Bridge",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kiranbmore0101/bridge/issues"
+  },
+  "homepage": "https://github.com/kiranbmore0101/bridge#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}

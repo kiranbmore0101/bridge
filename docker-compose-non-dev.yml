@@ -1,0 +1,96 @@
+#
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+x-bridge-image: &bridge-image apache/bridge:${TAG:-latest-dev}
+x-bridge-depends-on: &bridge-depends-on
+  - db
+  - redis
+x-bridge-volumes: &bridge-volumes
+  # /app/pythonpath_docker will be appended to the PYTHONPATH in the final container
+  - ./docker:/app/docker
+  - bridge_home:/app/bridge_home
+
+version: "3.7"
+services:
+  redis:
+    image: redis:latest
+    container_name: bridge_cache
+    restart: unless-stopped
+    volumes:
+      - redis:/data
+
+  db:
+    env_file: docker/.env-non-dev
+    image: postgres:10
+    container_name: bridge_db
+    restart: unless-stopped
+    volumes:
+      - db_home:/var/lib/postgresql/data
+
+  bridge:
+    env_file: docker/.env-non-dev
+    image: *bridge-image
+    container_name: bridge_app
+    command: ["/app/docker/docker-bootstrap.sh", "app-gunicorn"]
+    user: "root"
+    restart: unless-stopped
+    ports:
+      - 8088:8088
+    depends_on: *bridge-depends-on
+    volumes: *bridge-volumes
+
+  bridge-init:
+    image: *bridge-image
+    container_name: bridge_init
+    command: ["/app/docker/docker-init.sh"]
+    env_file: docker/.env-non-dev
+    depends_on: *bridge-depends-on
+    user: "root"
+    volumes: *bridge-volumes
+    healthcheck:
+      disable: true
+
+  bridge-worker:
+    image: *bridge-image
+    container_name: bridge_worker
+    command: ["/app/docker/docker-bootstrap.sh", "worker"]
+    env_file: docker/.env-non-dev
+    restart: unless-stopped
+    depends_on: *bridge-depends-on
+    user: "root"
+    volumes: *bridge-volumes
+    healthcheck:
+      test: ["CMD-SHELL", "celery inspect ping -A bridge.tasks.celery_app:app -d celery@$$HOSTNAME"]
+
+  bridge-worker-beat:
+    image: *bridge-image
+    container_name: bridge_worker_beat
+    command: ["/app/docker/docker-bootstrap.sh", "beat"]
+    env_file: docker/.env-non-dev
+    restart: unless-stopped
+    depends_on: *bridge-depends-on
+    user: "root"
+    volumes: *bridge-volumes
+    healthcheck:
+      disable: true
+
+volumes:
+  bridge_home:
+    external: false
+  db_home:
+    external: false
+  redis:
+    external: false
